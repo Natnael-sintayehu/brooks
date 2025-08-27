@@ -6,7 +6,7 @@ import { LangProvider } from "./LanguageContext.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/brook">
+  <BrowserRouter >
     <LangProvider>
       <App />
     </LangProvider>
