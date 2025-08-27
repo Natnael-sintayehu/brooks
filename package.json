@@ -1,5 +1,5 @@
 {
-  "name": "realestate-frontend",
+  "name": "brook",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && rm -rf docs && mv dist docs && git add docs && git commit -m 'deploy: update docs' && git push origin main"
+    "deploy": "npm run build && rimraf docs && move-cli dist docs && git add docs && git commit -m \"deploy: update docs\" && git push origin main"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -24,6 +24,8 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "move-cli": "^2.0.0",
+    "rimraf": "^6.0.1",
     "vite": "^7.1.2"
   }
 }
