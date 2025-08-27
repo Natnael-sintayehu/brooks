@@ -1,0 +1,20 @@
+/* Ensure full height for flex layout */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout wrapper */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full screen height */
+}
+
+/* Content grows, pushes footer down */
+.app-content {
+  flex: 1;
+}
