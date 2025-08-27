@@ -1,13 +1,16 @@
 {
-  "name": "realestate-frontend",
+  "name": "real-estate-frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Natnael-sintayehu.github.io/real-estate-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "main"
   },
   "dependencies": {
     "react": "^19.1.1",
