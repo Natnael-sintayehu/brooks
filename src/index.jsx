@@ -3,9 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./styles.css";
 import { LangProvider } from "./LanguageContext.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <LangProvider>
-    <App />
-  </LangProvider>
+  <BrowserRouter basename="/brook">
+    <LangProvider>
+      <App />
+    </LangProvider>
+  </BrowserRouter>
 );
